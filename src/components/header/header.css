@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.topnav {
+    overflow: hidden;
+    /* background-color: #f2f2f2; */
+}
+
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+.list-menu:hover{
+    color: #ffc700;
+}
+.nav{
+    margin-top: 31px;
+    opacity: 0;
+}
+.right-menu{
+    float: right;
+    margin-right: 110px;
+    margin-top: 10px;
+}
+.right-menu > img{
+    float: left;
+    margin-right: 20px;
+}
+.cart-img{
+    float: left;
+    margin-top: -3px;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+.blur-slide{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    margin-left: 61px;
+    width: 110px;
+    margin-right: 40px;
+    float: left;
+}
+.slide{
+    width: 100%;
+    height: 600px;
+    background-image: url('../../asset/img/slide.png');
+    background-size:cover;                    
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.title-slide{
+    width:700px;
+    height: 200px;
+    margin: auto;
+    margin-top: 80px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+}
+@media screen and (max-width: 1080px) {
+    
+    .title-slide{
+        width: auto;
+        margin-top: 60px;
+        font-size: 40px;
+    }
+    .nav{
+        margin-top: 0px;
+    }
+    .logo{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    .right-menu{
+        right: -60px;
+        top:8px;
+        position: absolute;
+    }
+    .list-menu{
+        clear: both;
+        width: 100%;
+        background-color: black;
+        float: left;
+        margin-top: 0px;
+        display: inline;
+    }
+    .slide{
+        height: 300px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .icon{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .title-slide{
+        font-size: 25px;
+    }
+}
